@@ -84,7 +84,7 @@ GH_REPO_SLUG = 'syntaf/fork-of-my-repo'
 **note:** See this repositories `.travis.yml` for a simpler configuration script. The below script is for conda environments which have a number of dependencies that also need to be installed.
 
 ```
-language: python - "2.7"
+language: python - "3.6"
 
 # before_install will simply setup a conda enviroment for installing python packages, if you
 # have project dependencies it's usually recommended to go this route
@@ -98,7 +98,7 @@ before_install:
     - sudo ln -s /run/shm /dev/shm
 
 install:
-    - conda install --yes python="2.7" sphinx
+    - conda install --yes python="3.6" sphinx
     - pip install --user travis-sphinx
 
 script:
