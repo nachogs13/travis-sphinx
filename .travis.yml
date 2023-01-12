@@ -2,7 +2,6 @@ sudo: false
 cache: pip
 language: python
 python:
-- '2.7'
 - '3.6'
 
 install:
@@ -12,5 +11,5 @@ install:
 script:
     - tox
 
-after_success:
-      - codecov
+after_script:
+    - codecov
